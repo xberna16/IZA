@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6F532134-5898-4679-A981-E8D7EBDD21D2"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E5428691-0265-4A2F-9958-A49C626E9115"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jidelnicek/KalendarTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
+            landmarkName = "unwindToFoodList(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "92F87652-5861-4FB4-86DE-FFF9BCB6EA60"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jidelnicek/FoodViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "21F854B4-82AF-4D71-ABC5-3A5C32DBD5A1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jidelnicek/FoodViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "33B63E24-BE95-4D15-A7DC-9C5C31B48C35"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jidelnicek/KalendarTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
+            landmarkName = "unwindToFoodList(sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "33B63E24-BE95-4D15-A7DC-9C5C31B48C35 - 8b2e1e76544df3e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jidelnicek.KalendarTableViewController.unwindToFoodList(sender: __C.UIStoryboardSegue) -&gt; ()"
+                  moduleName = "jidelnicek"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hynekbernard/Desktop/jidelnicek/jidelnicek/KalendarTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "516">
+               </Location>
+               <Location
+                  uuid = "33B63E24-BE95-4D15-A7DC-9C5C31B48C35 - 7b8b60017cd0669c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (jidelnicek.Den) -&gt; Swift.Bool in jidelnicek.KalendarTableViewController.unwindToFoodList(sender: __C.UIStoryboardSegue) -&gt; ()"
+                  moduleName = "jidelnicek"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hynekbernard/Desktop/jidelnicek/jidelnicek/KalendarTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "110">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F38007BB-7F83-4E39-B185-98B543E0C7F2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jidelnicek/KalendarTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "nactiDny()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F38007BB-7F83-4E39-B185-98B543E0C7F2 - 75512192ea6add37"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jidelnicek.KalendarTableViewController.(nactiDny in _1254635D5D9542399DB8E4F90F2F0348)() -&gt; ()"
+                  moduleName = "jidelnicek"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hynekbernard/Desktop/jidelnicek/jidelnicek/KalendarTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "139"
+                  endingLineNumber = "139"
+                  offsetFromSymbolStart = "417">
+               </Location>
+               <Location
+                  uuid = "F38007BB-7F83-4E39-B185-98B543E0C7F2 - 75512192ea6add37"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jidelnicek.KalendarTableViewController.(nactiDny in _1254635D5D9542399DB8E4F90F2F0348)() -&gt; ()"
+                  moduleName = "jidelnicek"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hynekbernard/Desktop/jidelnicek/jidelnicek/KalendarTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "139"
+                  endingLineNumber = "139"
+                  offsetFromSymbolStart = "4457">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "201BBB68-B91F-4EA5-B55A-699AAB936B40"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jidelnicek/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "201BBB68-B91F-4EA5-B55A-699AAB936B40 - c5feb5f3d2e60aa9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jidelnicek.AppDelegate.application(_: __C.UIApplication, didFinishLaunchingWithOptions: Swift.Optional&lt;Swift.Dictionary&lt;__C.UIApplicationLaunchOptionsKey, Any&gt;&gt;) -&gt; Swift.Bool"
+                  moduleName = "jidelnicek"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hynekbernard/Desktop/jidelnicek/jidelnicek/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "50">
+               </Location>
+               <Location
+                  uuid = "201BBB68-B91F-4EA5-B55A-699AAB936B40 - 61102f522618876b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in jidelnicek.AppDelegate.application(_: __C.UIApplication, didFinishLaunchingWithOptions: Swift.Optional&lt;Swift.Dictionary&lt;__C.UIApplicationLaunchOptionsKey, Any&gt;&gt;) -&gt; Swift.Bool"
+                  moduleName = "jidelnicek"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hynekbernard/Desktop/jidelnicek/jidelnicek/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D49DBB26-CC06-40ED-8FA0-79783C0BE8FE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jidelnicek/KalendarTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "initializeFetchedResultsController()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39BB452C-D60B-443B-81B3-7AEEC4DD5567"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jidelnicek/KalendarTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "unwindToFoodList(sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "39BB452C-D60B-443B-81B3-7AEEC4DD5567 - 8b2e1e76544df3e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jidelnicek.KalendarTableViewController.unwindToFoodList(sender: __C.UIStoryboardSegue) -&gt; ()"
+                  moduleName = "jidelnicek"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hynekbernard/Desktop/jidelnicek/jidelnicek/KalendarTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "177"
+                  endingLineNumber = "177"
+                  offsetFromSymbolStart = "1192">
+               </Location>
+               <Location
+                  uuid = "39BB452C-D60B-443B-81B3-7AEEC4DD5567 - 8b2e1e76544df3e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "jidelnicek.KalendarTableViewController.unwindToFoodList(sender: __C.UIStoryboardSegue) -&gt; ()"
+                  moduleName = "jidelnicek"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hynekbernard/Desktop/jidelnicek/jidelnicek/KalendarTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "177"
+                  endingLineNumber = "177"
+                  offsetFromSymbolStart = "1999">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9DBD527-A4A0-49D2-86B4-8767BFB1254B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jidelnicek/KalendarTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "unwindToFoodList(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D0DAE0BD-78AF-475E-95D5-C3B14BAFB2C7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "jidelnicek/KalendarTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
+            landmarkName = "onButtonTap(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

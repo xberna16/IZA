@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Den" representedClassName=".Den" syncable="YES" codeGenerationType="category">
+        <attribute name="datum" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="obed" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Jidlo"/>
+        <relationship name="snidane" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Jidlo"/>
+        <relationship name="vecere" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Jidlo"/>
+    </entity>
+    <entity name="Jidlo" representedClassName=".Jidlo" syncable="YES" codeGenerationType="category">
+        <attribute name="nazev" optional="YES" attributeType="String"/>
+        <attribute name="suroviny" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Den" positionX="-54" positionY="9" width="128" height="103"/>
+        <element name="Jidlo" positionX="-303" positionY="-12" width="128" height="73"/>
+    </elements>
+</model>
