@@ -10,13 +10,7 @@ import Foundation
 import UIKit
 import CoreData
 class Den : NSManagedObject{
-    /*@NSManaged var datum: Date
-    @NSManaged var snidane: Jidlo?
-    @NSManaged var obed: Jidlo?
-    var vecere: Jidlo?
-    init(datum: Date) {
-        self.datum = datum
-    }*/
+	//mazání položek dne
     func clear(){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
@@ -32,14 +26,6 @@ class Den : NSManagedObject{
         if vecere != nil {
             moc.delete(vecere!)
             vecere = nil
-        }
-    }
-    var worthSaving: Bool{
-        get{
-            if snidane != nil || obed != nil || vecere != nil{
-                return true
-            }
-            return false
         }
     }
 }

@@ -16,22 +16,16 @@ class KalendarTableViewController: UITableViewController, NSFetchedResultsContro
     var editDate = Date.init()
     var dny : [Den] = []
     var moc : NSManagedObjectContext?
-    
+    //inicializace dat
     override func viewDidLoad() {
         super.viewDidLoad()
         dateform.dateFormat = "dd.MM.yy"
         initializeFetchedResultsController()
 
         nactiDny()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        
     }
     
-    //MARK: - CORE DATA
+    //MARK: - CORE DATA FETCH
     var fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult>!
     func initializeFetchedResultsController(){
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Den")
@@ -51,16 +45,14 @@ class KalendarTableViewController: UITableViewController, NSFetchedResultsContro
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return dny.count
     }
 
-    
+    //nastavení labelů a buttonů buněk
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "DenTWC", for: indexPath) as? DenTableViewCell else{
             fatalError("Cell není instance DenTWC")
@@ -70,7 +62,6 @@ class KalendarTableViewController: UITableViewController, NSFetchedResultsContro
             fatalError("den bez data !!")
         }
         cell.editBtn.setTitle(dateform.string(from: datum), for: .normal)
-        // Configure the cell...
         if let snidane = den.snidane?.nazev{
             cell.snidaneLbl.text = snidane
         }
@@ -94,9 +85,10 @@ class KalendarTableViewController: UITableViewController, NSFetchedResultsContro
 
         return cell
     }
-    //MARK: - smazat
+    //MARK: - smazat záznam 
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         dny[indexPath.row].clear()
+		//pokud je záznam starší než dnes, smažu úplně
         if(Calendar.current.dateComponents([.day], from: dny[indexPath.row].datum!, to: Date.init(timeIntervalSinceNow:0)).day!) > 0
         {
             moc!.delete(dny[indexPath.row])
@@ -105,54 +97,16 @@ class KalendarTableViewController: UITableViewController, NSFetchedResultsContro
             do { try moc!.save() } catch{ fatalError("CannotSave")}
             return
         }
+		//pokud je záznam v rozmezí dnes-10dní
         tableView.reloadRows(at: [indexPath], with: .fade)
         do { try moc!.save() } catch{ fatalError("CannotSave")}
     }
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
+    
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+	//načtení dnů a vygenerování prázdných
     private func nactiDny(){
         let dnyFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Den")
         do {
@@ -176,16 +130,18 @@ class KalendarTableViewController: UITableViewController, NSFetchedResultsContro
             if skip{
                 continue
             }
-            
+            //tvorba dnu
             let den = NSEntityDescription.insertNewObject(forEntityName: "Den", into: moc!) as! Den
             den.datum = createDate
             dny+=[den]
         }
+		//řazení pro posloupnost
         dny.sort(){$0.datum! < $1.datum!}
         do { try moc!.save() } catch{ fatalError("CannotSave")}
         
         
     }
+	//přijetí dat z přidávacího controlleru a přiřazení ke dni
     @IBAction func unwindToFoodList(sender: UIStoryboardSegue){
         if let sourceVC = sender.source as? FoodViewController, let food = sourceVC.food, let foodType = sourceVC.typ{
             if let den = dny.first(where:{ dateform.string(from: $0.datum! ) == dateform.string(from: sourceVC.datum)}){
@@ -197,10 +153,10 @@ class KalendarTableViewController: UITableViewController, NSFetchedResultsContro
             }
             do { try moc!.save() } catch{ fatalError("CannotSave")}
             tableView.reloadData()
-            //tableView.insertRows(at: [IndexPath(row: dny.count-1, section: 0)], with: .automatic)
             
         }
     }
+	//nastavení upravovaného data při kliknutí na buňku
     @IBAction func onButtonTap(sender: UIButton){
         guard let btn = sender.currentTitle else {
             return

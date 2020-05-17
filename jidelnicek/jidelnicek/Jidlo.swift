@@ -16,14 +16,5 @@ enum typJidla: String {
 }
 
 class Jidlo: NSManagedObject {
-    
-    /*@NSManaged var nazev: String
-    @NSManaged var suroviny: String
-    //var typ: typJidla
-    init(nazev: String, suroviny: String/*, typ:typJidla*/) {
-        self.nazev = nazev
-        self.suroviny = suroviny
-        //self.typ = typ
-    }*/
 }
 

@@ -33,31 +33,26 @@ class FoodViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     var pickerData: [String] = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
+	//dismiss klávesnice
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
         view.addGestureRecognizer(tap)
+		//inicializace pickeru
         pickerData = [typJidla.Snidane.rawValue,typJidla.Obed.rawValue,typJidla.Vecere.rawValue]
         self.typPick.delegate = self
         self.typPick.dataSource = self
 
+		//nejspíše useless, ale již nemohu otestovat
         guard let prnt = self.presentingViewController  else{
             return
         }
         let dejmidatum = prnt as! KalendarTableViewController
         datum = dejmidatum.editDate
-        //datum = prnt.datum
-        // Do any additional setup after loading the view.
     }
     
 
-    /*
+    
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+	//odeslání dat z formuláře do hlavního VC
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         super.prepare(for: segue, sender: sender)
         guard let button = sender as? UIButton, button === saveBtn else{
